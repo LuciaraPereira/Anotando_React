@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+    min-height: 230px;
+    max-height: 230px;
+    background-color: #a1d0fc;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative; 
+}
+
+.descricao{
+    padding: 1rem;
+    max-height: 200px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.titulo{
+    max-width: 75%;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+
+    
+}

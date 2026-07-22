@@ -1,0 +1,141 @@
+.containerPrincipal{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+.efeito{
+    color: var(--cor-secundaria);
+}
+
+.btnComecar {
+    border: none;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    font-size: 19px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btnComecar::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #1465BB;
+    transition: width 0.5s ease;
+    margin-top: 1px;
+}
+
+.btnComecar:hover::after {
+    width: 100%;
+}
+
+.loginCadastro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--cor-secundaria);
+    padding: 5%;
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+}
+
+
+.loginCadastro form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.loginCadastro input{
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: var(--botoes-principais); 
+    border: none;
+    font-size: 16px;
+}
+
+.loginCadastro input::placeholder{
+    color: var(--cor-secundaria);
+}
+
+.loginCadastro p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.loginCadastro button.btnLc{
+    width: 200px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: var(--botoes-principais);
+    border: none;
+    color: var(--cor-secundaria);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.loginCadastro button.btnLc:hover{
+    background-color: #dbdbdb;
+}
+
+
+.loginCadastro  .btnCancelar{
+   position: absolute;
+    top: 0; 
+    right: 0;
+    width: 50px;
+    height: 50px;
+    color: var(--botoes-principais);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.loginCadastro  .btnCancelar:hover{
+  color: #dbdbdb;
+}
+
+.slogan{
+    font-size: 1rem;
+}
+
+
+.imagemInicio img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px){
+
+    .containerPrincipal{
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .imagemInicio img{
+        max-width: 250px;
+    }
+
+    .slogan{
+        padding: 0;
+    }
+}

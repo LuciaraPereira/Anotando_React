@@ -1,0 +1,32 @@
+.cont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 9rem;
+    gap: 20px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cont input{
+    width: 15rem; 
+    height: 2.1rem;
+    font-size: 16px;
+}
+
+.cont textarea{
+    height: 10rem;
+    width: 15rem;
+}
+
+@media (max-width: 768px) {
+
+    .cont{
+        margin-top: 12rem;   
+    }
+}
