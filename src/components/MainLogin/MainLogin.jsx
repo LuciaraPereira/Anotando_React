@@ -1,4 +1,4 @@
-import  "./MainLogin.module.css";
+import "./MainLogin.css";
 import Login from "../Login/Login";
 import { useState } from "react";
 import TextoMain from "../TextoMain/TextoMain";
