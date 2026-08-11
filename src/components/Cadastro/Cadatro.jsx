@@ -31,6 +31,10 @@ function Cadastro({voltarHome, irParaLogin}){
       .catch((erro) => {
           console.log(erro)
           alert("Email já cadastrado!");
+          setNome("");
+          setEmail("");
+          setSenha("");
+          setSenhaC("");
       })
   }
     return(
