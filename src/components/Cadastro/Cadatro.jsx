@@ -30,6 +30,7 @@ function Cadastro({voltarHome, irParaLogin}){
      
       .catch((erro) => {
           console.log(erro)
+          alert("Email já cadastrado!");
       })
   }
     return(
